@@ -1,2 +1,5 @@
 # autosave files #
 *~
+
+# c files #
+*pyc

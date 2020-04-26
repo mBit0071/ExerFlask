@@ -2,7 +2,7 @@
 {% block content  %}
 	<label for="lb1">Enter text:</label>
 
-	<form action="{{ url_for('testText')}}" method="post">
+	<form action="{{ url_for('testText')}}" method="get">
 		Text: <input type="text" name="lb2"> <br>
 		<input type="submit" value="submit">
 	</form>

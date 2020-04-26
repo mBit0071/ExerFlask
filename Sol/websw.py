@@ -14,8 +14,9 @@ app.secret_key = 'EPPbPMgMm5uZ' #haha not so secret!
 def home():
     return render_template('home.html')
     
-@app.route('/test1', methods=['POST'])
+@app.route('/test1', methods=['GET'])
 def testText():
-	txt = request.form['lb2']
+	#txt = request.form['lb2']
+	txt=request.args.get('lb2')
 	txt=[txt]
 	return render_template('test1.html', title='ExerTest', text=txt)
